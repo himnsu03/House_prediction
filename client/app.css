@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+#uiEstimatedPrice {
+    margin-top: 20px;
+    background-color: #dcd686;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.switch-field {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.switch-field input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+    background-color: #f2f2f2;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 16px;
+    margin-right: -1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked + label {
+    background-color: #e91e63;
+    color: white;
+    box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+
+.area, .location, .submit, .result {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.area, .location {
+    background: #f2f2f2;
+    border: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 40px;
+}
+
+.submit {
+    background: #e91e63;
+    border: 0;
+    margin: 25px 0 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.submit:hover {
+    background-color: #d81b60;
+}
+
+.result {
+    background: #dcd686;
+    border: 0;
+    margin: 25px 0 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
